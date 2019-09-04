@@ -1,12 +1,28 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <span v-for="(item,index) in list" :key="index">
+        <router-link :to="item.path">{{item.name}}</router-link>|
+      </span>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+// import router from '../router.js'
+export default {
+  data() {
+    return {
+      list: []
+    }
+  },
+  created() {
+    this.list.push(...this.$router.options.routes)
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {
