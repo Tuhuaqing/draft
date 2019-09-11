@@ -20,6 +20,11 @@ export default new Router({
       path: '/qrcode',
       name: 'qrcode',
       component: () => import('./views/qrcode.vue')
+    },
+    {
+      path: '/weui',
+      name: 'weui',
+      component: () => import('./views/weui.vue')
     }
   ]
 })
