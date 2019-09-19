@@ -1,5 +1,28 @@
-.weui-label {
-    color: #222222;
-    min-width: 1.5rem;
-    border: 1px solid red;
+.weui-cell{
+    font-size: 0.40rem;
 }
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* @media screen and (max-width: 454px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 455px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    html{
+        font-size: 100px;
+    }
+} */
