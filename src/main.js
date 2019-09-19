@@ -24,3 +24,5 @@ new Vue({
     store,
     render: h => h(App)
 }).$mount('#app')
+
+console.log(common.validateAgeRange(10, 'D', 20, 'A', '2019-9-11'))
