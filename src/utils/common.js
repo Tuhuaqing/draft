@@ -13,9 +13,9 @@ const common = {
     let maxBirth = minFlag == 'D' ? this.getDateBeforeNDays(min) : this.getDateBeforeNYear(min)
     let minBirth = maxFlag == 'D' ? this.getDateBeforeNDays(max) : this.getDateBeforeNYear(max)
     
-    console.log('被保人生日应该在',minBirth,'之后')
-    console.log('被保人生日应该在',maxBirth,'之前')
-    console.log('而被保人生日是',birth)
+    console.log('被保人生日应该在',minBirth,'及以后')
+    console.log('被保人生日应该在',maxBirth,'及以前')
+    console.log('而被保人生日是',birth,'年龄是',this.getAge(birth))
     // console.log(minDate, birth, maxDate)
     return this.isDuringDate(minBirth, maxBirth,  birth)
   },
